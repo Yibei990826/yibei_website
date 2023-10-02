@@ -85,6 +85,33 @@
                  
               </div>
             </div>
+             <div class="row justify-content-center">
+              <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <header class="ds-work-det-hed">
+                      <h1 class="ds-work-det-title">Robo Chef</h1>
+                      <span class="ds-work-det-dep">Machine Learning Project - 2022.12</span>
+                  </header>
+                  <figure><img src="assets/images/RoboChef.png"></figure>
+                  <div class="ds-work-content-sec">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                              <p>Robo Chef is a project that aims at answering two questions: Given an image of a food item, what are the key ingredients for the food item? And what food items should we recommend to a user based on his preferences and other similar users food choices? We took three steps in answering these questions: a classification system for food image recognition, mapping between food labels and food ingredients, and a recommender system to give our recipe recommendation.</p>
+
+                              <p>Here, I’m going to give a brief explanation for our classification system and recommendation system.</p>
+                              <figure><img src="assets/images/RC_process.png"></figure>
+
+                              <h2>Image Classfication with CNN</h2>
+                              <p> We built a CNN model to predict the correct food category out of 101 classes using a pretrained resnet50 architecture. We used FastAI deep learning library to create the pipeline for the model. The overall accuracy of 79.8% and the top-5 prediction accuracy of 94%</p>
+                              <h2>Recommendation System with SVM and NMF</h2>
+                              <p> We tried three approaches in generating the recommendation: SVD, NMF(non-nrgative matrix factorization) and Collaberative Filtering. Also, we used 6 metrics to evaluate the result of our recommendations including RMSE, MAE, and NDCG scores. We concluded that SVD is the best performing recommender and designed filteres that could further customize our recommender.</p>
+                                 
+                              
+                          </div>
+                      </div>
+                  </div>
+                 
+              </div>
+            </div>
         </div>
      </div>
    </main>
